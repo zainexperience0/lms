@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "noEmit": true,
+    "incremental": true,
+    "module": "esnext",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": [
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/middleware.js"
+, "src/app/(dashbord)/(routes)/teacher/create/page.js", "src/components/ui/fileUploder.js", "src/app/api/uploadthing/core.js", "src/app/api/uploadthing/route.js", "src/lib/uploadthing.js", "src/app/(dashbord)/_components/UploadImageForm.js"  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
