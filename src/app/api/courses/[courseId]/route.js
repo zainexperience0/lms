@@ -7,12 +7,13 @@ export async function PATCH(request, { params }) {
         const data = await request.json(); // Fix: Corrected variable name
         const user = await currentUser();
         const userId = user?.id;
+console.log({data});
 
         if (!userId) {
             return new NextResponse("Unauthorized", { status: 401 });
         }
 
-        const { courseId } = params; // Fix: Corrected params destructuring
+        const { courseId } = await params; // Fix: Corrected params destructuring
 
         if (!courseId) {
             return new NextResponse("Course ID is required", { status: 400 });

@@ -18,7 +18,7 @@ export default async function CoursePage({ params }) {
     const userId = user.id;
 
     // Access `courseId` from `params`
-    const { courseId } = params;
+    const { courseId } = await params;
 
     // Fetch the course using `courseId`
     const course = await db.course.findUnique({

@@ -1,9 +1,7 @@
-
 import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import Toastprovider from "../components/ui/provider/Toaster-provider";
 import "@uploadthing/react/styles.css";
-
 
 export const metadata = {
   title: "LMS Project",
@@ -13,11 +11,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <ClerkProvider>
-
-      <html lang="en">
-        <body
-          className={` antialiased`}
-        >
+      <html lang="en" suppressHydrationWarning>
+        <body className={` antialiased`}>
           <Toastprovider />
           {children}
         </body>

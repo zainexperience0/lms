@@ -11,8 +11,8 @@ export const ourFileRouter = {
     },
   })
     .onUploadComplete(async ({ metadata, file }) => {
-      console.log("this is test to cheak is onuploadcomplete working", file.url);
+      console.log("this is test to cheak is onuploadcomplete working", file.ufsUrl);
 
-      return { url: file.url };
+      return { url: file.ufpUrl };
     }),
 };
